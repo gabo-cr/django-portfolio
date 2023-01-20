@@ -1,0 +1,138 @@
+{% extends './layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Gabriel Chávez Riera - Web Developer{% endblock %}
+
+{% block metatags %}
+    <meta name="description" content="Creative web developer, trying to make my way through the Front-end world. If you have an interesting project, I would love to hear about it!" />
+    <meta name="keywords" content="web developer, desarrollador web, Gabriel Chávez Riera, portfolio, front-end developer" />
+    <meta name="title" property="og:title" content="Gabriel Chávez Riera" />
+    <meta name="description" property="og:description" content="Creative web developer, trying to make my way through the Front-end world. If you have an interesting project, I would love to hear about it!" />
+    <meta name="image" property="og:image" content="{% static 'images/matrix.jpg' %}" />
+    <meta property="og:url" content="https://gabrielchavezriera.com/developer" />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="Gabriel Chávez Riera" />
+    <meta name="twitter:title" content="Gabriel Chávez Riera">
+    <meta name="twitter:description" content="Creative web developer, trying to make my way through the Front-end world. If you have an interesting project, I would love to hear about it!">
+    <meta name="twitter:image" content="{% static 'images/matrix.jpg' %}">
+    <meta name="twitter:card" content="summary_large_image">
+{% endblock %}
+
+{% block fonts %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/desarrollador.css' %}">
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/cmatrix.js' %}" type="module"></script>
+{% endblock %}
+
+{% block content %}
+    <canvas id="canvas" role="complementary"></canvas>
+    <header>
+      <div>
+        <h1><a href="{% url 'inicio' %}">Gabriel Chavez Riera</a></h1>
+        <p>{% translate "Web developer" %}</p>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#about-me-anchor">{% translate "About me" %}</a></li>
+          <li><a href="#projects-anchor">{% translate "Projects" %}</a></li>
+          <li><a href="#skills-anchor">{% translate "Skills" %}</a></li>
+          <li><a href="#contacts-anchor">{% translate "Contact" %}</a></li>
+        </ul>
+      </nav>
+      <div id="menuBtn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+    <main>
+      <section id="about-me">
+        <a class="anchor" id="about-me-anchor"></a>
+        <h2>{% translate "About me" %}</h2>
+        <p>{{ about|safe }}</p>
+      </section>
+      <section id="projects">
+        <a class="anchor" id="projects"></a>
+        <h2>{% translate "Projects" %}</h2>
+        <ul>
+          {% for project in projects %}
+            <li><a href="{{project.link}}" target="_blank">{% translate project.name %}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section id="skills">
+        <a class="anchor" id="skills-anchor"></a>
+        <h2>{% translate "Skills" %}</h2>
+        <div class="group">
+          {% for skill in skills %}
+            <div class="skill">
+              <figure>
+                <img src="/{{skill.image}}" alt="{{skill.name}} logo">
+                <figcaption>{{ skill.name }}</figcaption>
+              </figure>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <section id="contacts">
+        <a class="anchor" id="contacts-anchor"></a>
+        <h2>{% translate "Contact" %}</h2>
+        <p>{% translate "Have an interesting project? I would love to hear about it!" %}</p>
+        <div class="group">
+          {% for contact in contacts %}
+            <div class="contact">
+              <a href="{{contact.link}}" target="_blank">
+                <figure>
+                  <img src="/{{contact.image}}" alt="{{contact.name}} logo">
+                  <figcaption>{{contact.name}}</figcaption>
+                </figure>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+        <hr>
+        <span id="qKey">{% translate "Try pressing the Q key and then scroll through the site. Did you feel the power of mastering The Matrix? (Press the R key to restart)" %}</span>
+      </section>
+    </main>
+    <footer>
+      <aside id="filters">
+        {% get_current_language as CURRENT_LANGUAGE %}
+        {% get_available_languages as AVAILABLE_LANGUAGES %}
+        {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+        <div class="filter">
+          <label for="language">{% translate "Language" %}:</label>
+          <ul class="languages">
+            {% for language in languages %}
+              <li>
+                <a href="/{{ language.code }}/desarrollador/" {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>{{ language.name_local|title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="filter">
+          <label for="theme">{% translate "Theme" %}:</label>
+          <select name="theme" id="theme">
+            <option value="light">{% translate "Light" %}</option>
+            <option value="dark" selected>{% translate "Dark" %}</option>
+          </select>
+        </div>
+      </aside>
+      <div>
+        <p>{% translate "Made by Gabo, May 2022" %}</p>
+        <p>{% translate "Updated on Jan, 2023" %}</p>
+      </div>
+    </footer>
+{% endblock %}
+
+{% block footerscripts %}
+    <script src="{% static 'js/desarrollador.js' %}" type="module"></script>
+{% endblock %}

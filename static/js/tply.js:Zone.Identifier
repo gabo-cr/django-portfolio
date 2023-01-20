@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/ichub/tply/releases/tag/1.0.1
+HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/50317228/1fb278f8-de2e-11e5-9028-bf58cae1792b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220810%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220810T010738Z&X-Amz-Expires=300&X-Amz-Signature=7f2185e87bbd40f28916a2c09bdd3e44e1f1e0fc5423667e492843f3fdb8fa22&X-Amz-SignedHeaders=host&actor_id=97985558&key_id=0&repo_id=50317228&response-content-disposition=attachment%3B%20filename%3Dtply.js&response-content-type=application%2Foctet-stream

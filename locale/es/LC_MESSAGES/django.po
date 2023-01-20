@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-20 12:58-0600\n"
+"PO-Revision-Date: 2023-01-20 14:00-0500\n"
+"Last-Translator:   <gabrielchavezriera@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: personalweb/settings.py:114
+msgid "English"
+msgstr "Inglés"
+
+#: personalweb/settings.py:115
+msgid "Spanish"
+msgstr "Español"
+
+#: templates/desarrollador.html:41
+msgid "Web developer"
+msgstr "Desarrollador web"
+
+#: templates/desarrollador.html:45 templates/desarrollador.html:60
+msgid "About me"
+msgstr "Acerca de mí"
+
+#: templates/desarrollador.html:46 templates/desarrollador.html:65
+msgid "Projects"
+msgstr "Proyectos"
+
+#: templates/desarrollador.html:47 templates/desarrollador.html:74
+msgid "Skills"
+msgstr "Habilidades"
+
+#: templates/desarrollador.html:48 templates/desarrollador.html:88
+msgid "Contact"
+msgstr "Contacto"
+
+#: templates/desarrollador.html:89
+msgid "Have an interesting project? I would love to hear about it!"
+msgstr "¿Tienes un proyecto interesante? ¡Me encantaría escucharte!"
+
+#: templates/desarrollador.html:103
+msgid ""
+"Try pressing the Q key and then scroll through the site. Did you feel the "
+"power of mastering The Matrix? (Press the R key to restart)"
+msgstr ""
+"Presiona la tecla Q y luego desplázate por el sitio web. ¿Sentiste el poder "
+"de dominar La Matrix? (Presiona la tecla R para reiniciar)"
+
+#: templates/desarrollador.html:112 templates/inicio.html:110
+msgid "Language"
+msgstr "Idioma"
+
+#: templates/desarrollador.html:122
+msgid "Theme"
+msgstr "Apariencia"
+
+#: templates/desarrollador.html:124
+msgid "Light"
+msgstr "Claro"
+
+#: templates/desarrollador.html:125
+msgid "Dark"
+msgstr "Oscuro"
+
+#: templates/desarrollador.html:130 templates/inicio.html:120
+msgid "Made by Gabo, May 2022"
+msgstr "Hecho por Gabo, Mayo de 2022"
+
+#: templates/desarrollador.html:131
+msgid "Updated on Jan, 2023"
+msgstr "Actualizado en Enero, 2023"
+
+#: templates/inicio.html:46
+msgid "Start your journey"
+msgstr "Comienza tu viaje"
+
+#: templates/inicio.html:53 templates/inicio.html:62
+msgid "Do you want to know who he is?"
+msgstr "¿Quieres saber quién es él?"
+
+#: templates/inicio.html:55 templates/inicio.html:63
+msgid "Unfortunately, nobody can be told who Gabriel is..."
+msgstr "Desafortunadamente, a nadie se le puede decir quién es Gabriel..."
+
+#: templates/inicio.html:57 templates/inicio.html:64
+msgid "You have to see it for yourself."
+msgstr "Tienes que verlo por ti mismo."
+
+#: templates/inicio.html:69
+msgid "Let me go to the Matrix"
+msgstr "Déjame ir a la Matrix"
+
+#: templates/inicio.html:72
+msgid "Take me to Wonderland"
+msgstr "Llévame a Wonderland"
+
+#: templates/inicio.html:79
+msgid "This is your chance to know him."
+msgstr "Esta es tu oportunidad de conocerlo."
+
+#: templates/inicio.html:80 templates/inicio.html:94
+msgid "After this, everything will change."
+msgstr "Después de esto, todo cambiará."
+
+#: templates/inicio.html:82 templates/inicio.html:95
+#| msgid ""
+#| "You take the blue path, you stay in the Matrix. You see what Gabriel has "
+#| "developed and believe whatever you want to believe about him."
+msgid ""
+"You take the green path, you stay in the Matrix. You see what Gabriel has "
+"developed and believe whatever you want to believe about him."
+msgstr ""
+"Si eliges el camino verde, te quedas en la Matrix. Ves lo que Gabriel ha "
+"desarrollado y crees lo que quieras creer sobre él."
+
+#: templates/inicio.html:84 templates/inicio.html:96
+#| msgid ""
+#| "You take the red path, I take you to Wonderland, to show you how deep the "
+#| "rabbit hole goes."
+msgid ""
+"You take the blue path, I take you to Wonderland, to show you how deep the "
+"rabbit hole goes."
+msgstr ""
+"Si eliges el camino azul, te llevo a Wonderland, para mostrarte qué tan "
+"profunda es la madriguera del conejo."
+
+#: templates/inicio.html:86
+msgid "Remember: "
+msgstr "Recuerda: "
+
+#: templates/inicio.html:88
+msgid "all I'm offering is the truth, nothing more."
+msgstr "lo único que te ofrezco es la verdad, nada más."
+
+#: templates/inicio.html:93
+msgid "This is your chance."
+msgstr "Esta es tu oportunidad."
+
+#: templates/inicio.html:97
+msgid "Remember: all I'm offering is the truth, nothing more."
+msgstr "Recuerda: lo único que te ofrezco es la verdad, nada más."
+
+#: templates/inicio.html:100
+msgid "Skip"
+msgstr "Saltar"
+
+#~ msgid "Select your language"
+#~ msgstr "Elige tu idioma"
